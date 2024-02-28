@@ -1,0 +1,10 @@
+https://cmr.earthdata.nasa.gov/browse-scaler/browse_images/datasets/C1561222826-GES_DISC?h=85&w=85
+
+
+
+
+Othernotes:
+
+https://github.com/aws/aws-lambda-dotnet/discussions/1527
+
+similar but, same answers

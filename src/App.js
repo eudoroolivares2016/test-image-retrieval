@@ -1,25 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = async () => {
+  const url = "https://cmr.earthdata.nasa.gov/browse-scaler/browse_images/datasets/C1561222826-GES_DISC?h=85&w=85"
+  const value = await fetch(url)
+  console.log("🚀 App -> value", value)
+  
+  // return (
+  //   <div className="App">
+  //     <img
+  //     src="https://cmr.earthdata.nasa.gov/browse-scaler/browse_images/datasets/C1561222826-GES_DISC?h=85&w=85"
+  //     >
+  //     </img>
+  //   </div>
+  // );
 }
 
 export default App;
